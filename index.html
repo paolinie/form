@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+  <title>Create a account</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="form">
+    <form novalidate>
+      <div>
+        <label>
+          <input id="name" required>
+          <span class="placeholder">Name</span>
+          <span class="error hidden">
+            <i class="fas fa-exclamation"></i>
+            <p></p>
+          </span>
+        </label>
+        <label>
+          <input id="surname" required>
+          <span class="placeholder">Surname</span>
+          <span class="error hidden">
+            <i class="fas fa-exclamation"></i>
+            <p></p>
+          </span>
+        </label>
+      </div>
+      <div>
+        <label>
+          <input id="email" type="email" required>
+          <span class="placeholder">Email</span>
+          <span class="error hidden">
+            <i class="fas fa-exclamation"></i>
+            <p></p>
+          </span>
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="password" required id="pass">
+          <span class="placeholder">Password</span>
+          <span class="error hidden">
+            <i class="fas fa-exclamation"></i>
+            <p></p>
+          </span>
+        </label>
+        <label>
+          <input type="password" required id="confirm">
+          <span class="placeholder">Confirm</span>
+          <span class="error hidden">
+            <i class="fas fa-exclamation"></i>
+            <p></p>
+          </span>
+        </label>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+    <div class="slogan">
+      <p>Create an account, create a life</p>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
