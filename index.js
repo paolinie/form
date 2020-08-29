@@ -10,9 +10,7 @@ function checkValidity() {
 }
 
 function showError(input, message) {
-  
   let span = input.nextElementSibling.nextElementSibling;
-  console.log(span);
   if (message || input.validationMessage) {
     span.innerHTML = `
     <i class="fas fa-exclamation"></i>
@@ -53,7 +51,7 @@ document.querySelectorAll('input').forEach((input) => {
 document
   .querySelector('input[type="submit"]')
   .addEventListener('click', (e) => {
-    if (checkPassword() || !checkValidity()) {
+    if (!checkPassword() || !checkValidity()) {
       e.preventDefault();
       toggleError();
       checkPassword();
